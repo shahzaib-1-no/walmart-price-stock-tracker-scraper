@@ -57,12 +57,11 @@ wsl --install
 ```bash
 wsl --install --no-distribution
 ```
+### 1. Restart Pc so changes may apply
 ### 1. Ensure WSL install properly
 ```bash
 wsl --list --verbose
 ```
-### 1. Restart Pc so changes may apply
-
 ### 1. Launch Ubuntu
 ```bash
 wsl
