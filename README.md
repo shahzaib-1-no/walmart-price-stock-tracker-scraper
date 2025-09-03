@@ -53,10 +53,16 @@ CREATE TABLE products (
 ```bash
 wsl --install
 ```
+### 1. Enable Optional component
+```bash
+wsl --install
+```
 ### 1. Ensure WSL install properly
 ```bash
-wsl --list --verbose
+wsl --install --no-distribution
 ```
+### 1. Restart Pc so changes may apply
+
 ### 1. Launch Ubuntu
 ```bash
 wsl
