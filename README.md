@@ -53,7 +53,18 @@ CREATE TABLE products (
 git clone https://github.com/username/walmart-price-stock-tracker-scraper.git
 cd walmart-price-stock-tracker-scraper
 ```
-
+### 1. Install Wsl
+```bash
+wsl --install
+```
+### 1. Ensure WSL install properly
+```bash
+wsl --list --verbose
+```
+### 1. Launch Ubuntu
+```bash
+wsl
+```
 ### 2. Create Virtual Environment
 ```bash
 python -m venv venv
