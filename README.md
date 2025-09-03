@@ -55,11 +55,11 @@ wsl --install
 ```
 ### 1. Enable Optional component
 ```bash
-wsl --install
+wsl --install --no-distribution
 ```
 ### 1. Ensure WSL install properly
 ```bash
-wsl --install --no-distribution
+wsl --list --verbose
 ```
 ### 1. Restart Pc so changes may apply
 
