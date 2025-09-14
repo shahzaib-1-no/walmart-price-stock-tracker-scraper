@@ -51,7 +51,7 @@ CREATE TABLE products (
 );
 
 ## 🔹 Installation
-
+```
 ### 1. Clone Repository
 ```bash
 git clone https://github.com/username/walmart-price-stock-tracker-scraper.git
@@ -96,24 +96,15 @@ DB_PORT=5432
 
 ### 1. Run Scraper
 ```bash
-scrapy crawl walmart_spider
+scrapy crawl walmart_products_parser
+scrapy crawl walmart_products
 ```
 This will scrape Walmart products and insert the data into **PostgreSQL**.
 
 ### 2. Export Data (Optional)
 ```bash
-scrapy crawl walmart_spider -o output.json
-scrapy crawl walmart_spider -o output.csv
+scrapy crawl walmart_products -o output.csv
 ```
-
-## 🔹 Example Output
-| Product Title | Price | Stock | Reviews | Rating |
-|---------------|-------|-------|---------|--------|
-| iPhone 14     | $799  | In Stock | 1250 | 4.6 ⭐ |
-| Samsung TV    | $599  | Out of Stock | 850 | 4.3 ⭐ |
-
----
-
 ## 🔹 Use Cases
 - 🛒 **E-commerce Monitoring** → Track Walmart product prices  
 - 📉 **Price Comparison** → Compare Walmart with competitors  
