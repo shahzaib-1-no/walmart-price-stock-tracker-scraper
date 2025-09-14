@@ -6,13 +6,13 @@ Designed for **real-time price monitoring, stock availability tracking, reviews,
 ---
 ## Project Screenshots
 
-| Screenshot 1 | Screenshot 2 |
+| Walmart Logo | Walmart Website |
 |--------------|--------------|
-| ![Screenshot 1](images/img1.png) | ![Screenshot 2](images/img2.png) |
+| ![Walmart Logo](https://github.com/shahzaib-1-no/walmart-price-stock-tracker-scraper/blob/0c9a311b19ce8afe32c409f6183100c9bbc6a985/images/images.png) | ![Walmart Website](https://github.com/shahzaib-1-no/walmart-price-stock-tracker-scraper/blob/0c9a311b19ce8afe32c409f6183100c9bbc6a985/images/walmart_website.png) |
 
-| Screenshot 3 | Screenshot 4 |
+| Products HTML | Products HTML Parse |
 |--------------|--------------|
-| ![Screenshot 3](images/img3.png) | ![Screenshot 4](images/img4.png) |
+| ![Products HTML](https://github.com/shahzaib-1-no/walmart-price-stock-tracker-scraper/blob/0c9a311b19ce8afe32c409f6183100c9bbc6a985/images/walmart_products.png) | ![Products HTML Parse](https://github.com/shahzaib-1-no/walmart-price-stock-tracker-scraper/blob/0c9a311b19ce8afe32c409f6183100c9bbc6a985/images/walmart_products_parse.png) |
 ---
 ## 🔹 Features
 - Scrape **detailed Walmart product data**:
