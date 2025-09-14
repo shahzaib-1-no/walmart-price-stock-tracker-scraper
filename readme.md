@@ -4,7 +4,16 @@
 Designed for **real-time price monitoring, stock availability tracking, reviews, and ratings analysis**.  
 
 ---
+## Project Screenshots
 
+| Screenshot 1 | Screenshot 2 |
+|--------------|--------------|
+| ![Screenshot 1](images/img1.png) | ![Screenshot 2](images/img2.png) |
+
+| Screenshot 3 | Screenshot 4 |
+|--------------|--------------|
+| ![Screenshot 3](images/img3.png) | ![Screenshot 4](images/img4.png) |
+---
 ## 🔹 Features
 - Scrape **detailed Walmart product data**:
   - Title  
