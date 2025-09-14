@@ -1,22 +1,26 @@
 # Walmart Price & Stock Tracker Scraper
 
-🚀 A professional **Walmart Web Scraper** built with **Python, Scrapy, Playwright, PostgreSQL, and Streamlit**.  
-This tool helps you monitor **Walmart product prices, stock availability, reviews, and ratings** with automated alerts and a dashboard.  
+🚀 A **professional Walmart Web Scraper** built with **Python, Scrapy, Playwright, and PostgreSQL**.  
+Designed for **real-time price monitoring, stock availability tracking, reviews, and ratings analysis**.  
 
 ---
 
 ## 🔹 Features
-- Scrape **5000+ Walmart products**:
-  - Product Title  
-  - Price  
-  - Stock Status  
-  - Reviews & Ratings  
-- **Playwright + Scrapy Integration** → handle dynamic pages & avoid bot detection  
-- **Proxy rotation + headless scraping** for large-scale data collection  
-- **PostgreSQL storage** for structured & historical data  
-- **Daily automation** using cron jobs (or Airflow for advanced pipelines)  
-- **Email alerts** for price drops & out-of-stock products  
-- **Interactive dashboard** with Streamlit to explore data  
+- Scrape **detailed Walmart product data**:
+  - Title  
+  - Image  
+  - URL  
+  - Brand  
+  - Price + Price Range  
+  - Rating  
+  - Reviews Count  
+  - Badge (Best Seller / Rollback / Clearance etc.)  
+  - Delivery Options  
+
+- **Playwright + Scrapy Integration** → handle **JavaScript-heavy & dynamic pages** smoothly  
+- **Proxy rotation + headless mode** → scale scraping & bypass bot detection  
+- **PostgreSQL storage** → structured, queryable, and historical product data  
+- **Scalable architecture** → easy to extend for more attributes or categories  
 
 ---
 
@@ -24,27 +28,27 @@ This tool helps you monitor **Walmart product prices, stock availability, review
 - **Language:** Python  
 - **Scraping Tools:** Scrapy, Playwright  
 - **Database:** PostgreSQL  
-- **Automation:** Cron Jobs / Airflow  
-- **Dashboard:** Streamlit  
-- **Email Alerts:** SMTP / SendGrid  
-- **Containerization (Optional):** Docker  
+- **Containerization (Optional):** VENV  
 
 ---
 
-## 🔹 Database Schema (PostgreSQL)
+## 🔹 Database Schema (PostgreSQL)  
 ```sql
 CREATE TABLE products (
     product_id VARCHAR PRIMARY KEY,
     title TEXT,
+    brand TEXT,
+    image TEXT,
+    url TEXT,
     price NUMERIC,
+    price_range TEXT,
     stock_status TEXT,
     reviews INT,
     rating FLOAT,
+    badge TEXT,
+    delivery TEXT,
     date TIMESTAMP DEFAULT NOW()
 );
-```
-
----
 
 ## 🔹 Installation
 
@@ -102,34 +106,11 @@ scrapy crawl walmart_spider -o output.json
 scrapy crawl walmart_spider -o output.csv
 ```
 
-### 3. Run Streamlit Dashboard
-```bash
-streamlit run dashboard.py
-```
-Open the link in your browser to view the dashboard (default: http://localhost:8501).
-
-### 4. Setup Automation
-- Add cron job for daily scraping:
-```bash
-0 9 * * * /usr/bin/python3 /path/to/project/scrapy crawl walmart_spider
-```
-(This example runs daily at 9 AM)
-
----
-
 ## 🔹 Example Output
 | Product Title | Price | Stock | Reviews | Rating |
 |---------------|-------|-------|---------|--------|
 | iPhone 14     | $799  | In Stock | 1250 | 4.6 ⭐ |
 | Samsung TV    | $599  | Out of Stock | 850 | 4.3 ⭐ |
-
----
-
-## 🔹 Alerts Example
-📧 **Email Notification:**  
-- *Product:* iPhone 14  
-- *Status:* Out of Stock  
-- *Price Change:* $799 → $749  
 
 ---
 
