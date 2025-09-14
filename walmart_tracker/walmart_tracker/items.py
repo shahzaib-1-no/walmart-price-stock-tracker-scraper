@@ -7,6 +7,14 @@ import scrapy
 
 
 class WalmartTrackerItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+    title = scrapy.Field()
+    image = scrapy.Field()
+    url = scrapy.Field()
+    brand = scrapy.Field()
+    price = scrapy.Field()
+    price_range = scrapy.Field()
+    rating = scrapy.Field()
+    reviews = scrapy.Field()
+    badge = scrapy.Field()
+    delivery = scrapy.Field()
+    
